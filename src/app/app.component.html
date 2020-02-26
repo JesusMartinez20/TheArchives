@@ -20,16 +20,16 @@
       <button mat-menu-item>Cuentas</button>
       <button mat-menu-item>Merge</button>
       <button mat-menu-item>Radix</button>
-      <button mat-menu-item>Shell</button>
-      <button mat-menu-item>Quicksort</button>
+      <button mat-menu-item routerLink="shell">Shell</button>
+      <button mat-menu-item routerLink="quicksort">Quicksort</button>
     </mat-menu>
     
     <mat-menu #ED="matMenu">
       <button mat-menu-item>Arreglos</button>
       <button mat-menu-item>Cadenas</button>
       <button mat-menu-item>Matrices</button>
-      <button mat-menu-item>Pilas</button>
-      <button mat-menu-item>Colas</button>
+      <button mat-menu-item routerLink="pilas">Pilas</button>
+      <button mat-menu-item routerLink="colas">Colas</button>
       <button mat-menu-item>LSE</button>
       <button mat-menu-item>LDE</button>
       <button mat-menu-item>Grafos</button>
@@ -52,4 +52,4 @@
     </mat-menu>-->
   </mat-toolbar-row>
 </mat-toolbar>
-<!--<app-Grafos></app-Grafos>-->
+<router-outlet></router-outlet>

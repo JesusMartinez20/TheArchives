@@ -54,18 +54,28 @@ import {MatTreeModule} from '@angular/material/tree';
 
 //Componentes
 import { GrafosComponent } from "./Grafos/Grafos.component";
+import { ShellComponent } from './shell/shell.component';
+import { QuicksortComponent } from './quicksort/quicksort.component';
+import { PilasComponent } from './pilas/pilas.component';
+import { ColasComponent } from './colas/colas.component';
 
 //Rutas
 const appRoutes: Routes = [
-  {
-    path: "",
-    component: GrafosComponent
-  }];
+  {path: "Grafos", component: GrafosComponent},
+  {path: "shell", component: ShellComponent},
+  {path: "quicksort", component: QuicksortComponent},
+  {path: "pilas", component: PilasComponent},
+  {path: "colas", component: ColasComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    GrafosComponent
+    GrafosComponent,
+    ShellComponent,
+    QuicksortComponent,
+    PilasComponent,
+    ColasComponent
   ],
   imports: [
     BrowserModule,
