@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+//import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: "app-Grafos",
@@ -7,5 +8,9 @@ import { Component } from "@angular/core";
 })
 
 export class GrafosComponent {
+  /*safeURL: any;
+  constructor(videoURL: string, private _sanitizer: DomSanitizer){
+    this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(videoURL);
+  }*/
     
-    }
+}
