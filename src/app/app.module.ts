@@ -54,6 +54,13 @@ import {MatTreeModule} from '@angular/material/tree';
 
 //Componentes
 import { GrafosComponent } from "./Grafos/Grafos.component";
+import { RadixComponent } from './radix/radix.component';
+import { BurbujaComponent } from './burbuja/burbuja.component';
+import { SeleccionComponent } from './seleccion/seleccion.component';
+import { InsercionComponent } from './insercion/insercion.component';
+import { BucketComponent } from './bucket/bucket.component';
+import { CuentasComponent } from './cuentas/cuentas.component';
+import { MergeComponent } from './merge/merge.component';
 
 //Rutas
 const appRoutes: Routes = [
@@ -65,7 +72,14 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    GrafosComponent
+    GrafosComponent,
+    RadixComponent,
+    BurbujaComponent,
+    SeleccionComponent,
+    InsercionComponent,
+    BucketComponent,
+    CuentasComponent,
+    MergeComponent
   ],
   imports: [
     BrowserModule,

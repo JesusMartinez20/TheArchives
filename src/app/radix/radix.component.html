@@ -1,0 +1,87 @@
+<mat-toolbar class="center">
+    <h1>Radix</h1>
+  </mat-toolbar>
+  
+  <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Definición
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+            <p>El método de ordenación radix es un algoritmo que ordena datos procesando sus elementos de forma individual, según la posición que ocupan dentro del dato. Los datos numéricos los por dígitos y los datos alfabéticos por letras. El  método  radix  se  clasifica  en  dos  tipos  según  el  orden  en  el que  procesan  los datos:</p>
+            <br>
+            <ul>
+                <li>De derecha a izquierda.</li>
+                <li>De izquierda a derecha.</li>
+            </ul>
+            <p>Si aplicamos este método solo a enteros, el método se clasificaría de la siguiente manera:</p>
+            <br>
+            <ul>
+                <li>El digito menos significativo (LSD, Least Significat Digit).</li>
+                <li>El digito más significativo (MSD, More Significat Digit).</li>
+            </ul>
+            <p>El procedimiento para aplicar el algoritmo de radix es el siguiente:</p>
+            <br>
+            <ol>
+                <li>Determinar cuál es la mayor cantidad de dígitos del elemento mayor del arreglo.</li>
+                <li>Crear un arreglo de colas, que permita almacenar cana uno de los dígitos del 0 al 9.</li>
+                <li>Crear cada posición del arreglo como un objeto que permita almacenar los elementos en cada cola, según el índice que le corresponde.</li>
+                <li>
+                    Generar un ciclo que determine el número de digito que se está procesando y el factor que permite encontrar el digito.
+                    <ol>
+                        <li>Inicializar el número de digito y el factor en uno.</li>
+                        <li>Mientras el digito sea menor o igual a la cantidad de dígitos encontrados en el paso uno.</li>
+                        <li>El número de digito se debe incrementar de uno en uno.</li>
+                    </ol>
+                </li>
+                <li>
+                    Crear un segundo ciclo que se encuentra dentro del anterior y que se encarga de recorrer todo el arreglo desde la posición inicial hasta la final del arreglo.
+                    <ol>
+                        <li>Iniciar el control del ciclo en cero.</li>
+                        <li>Mientras el control sea menor al tamaño del arreglo, continuamos en el ciclo.</li>
+                        <li>El control del ciclo se cambia de uno en uno.</li>
+                    </ol>
+                </li>
+                <li>
+                    Generar un segundo ciclo que se encuentra dentro del primero, al igual que el anterior y este controla el paso de los elementos de las colas al arreglo nuevamente.
+                    <ol>
+                        <li>El control de este ciclo inicia desde la cola cero, al igual que el índice que controla el arreglo de los elementos. </li>
+                        <li>Mientras el control sea menor a diez continua dentro del ciclo.</li>
+                        <li>El control del ciclo se incrementa de uno en uno.</li>
+                    </ol>
+                </li>
+                <li>Dentro del ciclo anterior se genera otro ciclo que se encarga de colocar el contenido de cada cola dentro del arreglo original y su condición es que mientras la cola no este vacía retire los elementos guardándolos en el arreglo e incrementar el índice que controla el arreglo.</li>
+            </ol>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Representación grafica
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="center">
+          <img src="https://i.stack.imgur.com/o3im8.jpg" alt="Representación grafica">
+        </div> 
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Ejemplo de código.
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis orci nec tellus pellentesque hendrerit. In auctor accumsan tellus mollis dapibus. Sed convallis efficitur ligula at mattis. Suspendisse faucibus pellentesque vehicula. Sed pharetra viverra dolor a mattis. Nulla vestibulum dapibus efficitur. Duis vehicula ornare nunc, in interdum felis mollis ut. Curabitur tristique ac nisi sit amet laoreet. Aliquam tristique lectus sapien, at rutrum nulla congue sed. Maecenas vitae felis semper, porttitor risus quis, ornare nulla. Aenean accumsan, odio in sollicitudin commodo, diam libero scelerisque ipsum, ac aliquam nunc nunc vel velit. Nunc eget felis scelerisque, auctor est eget, dignissim dolor. Pellentesque ex leo, pellentesque ut scelerisque id, commodo in urna. Curabitur porttitor elit nec ante placerat, vel imperdiet lorem porta. Vivamus mattis sit amet risus in dictum. Donec vitae est dui. Proin felis ligula, suscipit eu ligula a, mollis sollicitudin massa. Vivamus suscipit nibh felis. Nulla interdum urna erat, nec tincidunt lectus iaculis nec. Cras mattis scelerisque diam, sit amet convallis lacus fringilla eu. Mauris commodo purus id ipsum rutrum bibendum. Morbi condimentum sem in massa dignissim accumsan. Praesent vel justo felis. Proin pretium consequat lacus ac semper. Aenean euismod porttitor erat, ac rutrum sem volutpat eget. Pellentesque sit amet cursus ante. Nulla consectetur nunc a leo lobortis ultrices. Nunc aliquet congue facilisis. Maecenas et tempor velit. Aliquam euismod ut ante quis vulputate. Maecenas vitae pharetra nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in urna quis nisi pulvinar venenatis. Proin aliquet auctor tellus, id finibus sem vehicula luctus. Donec tincidunt nulla at nulla interdum vestibulum. Proin at elit lacus. Curabitur posuere tristique faucibus. Maecenas sollicitudin finibus vehicula.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Video tutorial
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_Xz3XyKsCaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>

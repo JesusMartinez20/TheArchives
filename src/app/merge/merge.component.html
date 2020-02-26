@@ -1,0 +1,64 @@
+<mat-toolbar class="center">
+    <h1>Merge</h1>
+  </mat-toolbar>
+  
+  <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Definición
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>El algoritmo de Mergesort es un ejemplo clásico de algoritmo que utiliza el principio de dividir para conquistar. Si el vector tiene más de dos elementos se lo divide en dos mitades, se invoca recursivamente al algoritmo y luego se hace una intercalación de las dos mitades ordenadas.</p>
+        <br>
+        <ul>
+            <li>Si la longitud del arreglo es menor o igual a 1, ya está ordenado.</li>
+            <li>El arreglo a ordenar se divide en dos mitades de tamaño similar.</li>
+            <li>Cada mitad se ordena de forma recursiva.</li>
+            <li>Las dos mitades ya ordenadas se mezclan, formando una secuencia ordenada.</li>
+        </ul>
+        <br>
+        <p>Ventajas</p>
+        <ul>
+            <li>Su algoritmo tiene mucha estabilidad (se evitan los problemas de intercambio de claves en la manipulación de datos).</li>
+            <li>Este algoritmo es efectivo para conjuntos de datos que se puedan acceder secuencialmente como arreglos, vectores y listas ligadas.</li>
+            <li>A diferencia de algunas versiones mejoradas del QuickSort, MergeSort es un método estable de ordenamiento mientras la operación de mezcla (Merge) sea implementada correctamente.</li>
+        </ul>
+        <br>
+        <p>Desventajas</p>
+        <ul>
+            <li>Su principal desventaja radica en que está definido recursivamente y su implementación no recursiva emplea una pila, por lo que requiere un espacio adicional de memoria para almacenarla.</li>
+            <li>A los algoritmos que realizan el proceso de ordenamiento dentro del mismo vector se les denomina algoritmos de ordenamiento "in-situ", el algoritmo de MergeSort no pertenece a esta familia ya que no utiliza el espacio sobre el que están almacenados los datos sino que para poder funcionar requiere de un espacio de memoria adicional del tamaño de los datos a ordenar en el cual se realicen las mezclas.</li>
+        </ul>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Representación grafica
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="center">
+          <img src="http://4.bp.blogspot.com/-G9vbYIZoTwY/VEeVj_EPeYI/AAAAAAAAAaM/ev9tZdrnyTU/s1600/java-mergesort.jpg" alt="Representación grafica">
+        </div> 
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Ejemplo de código
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis orci nec tellus pellentesque hendrerit. In auctor accumsan tellus mollis dapibus. Sed convallis efficitur ligula at mattis. Suspendisse faucibus pellentesque vehicula. Sed pharetra viverra dolor a mattis. Nulla vestibulum dapibus efficitur. Duis vehicula ornare nunc, in interdum felis mollis ut. Curabitur tristique ac nisi sit amet laoreet. Aliquam tristique lectus sapien, at rutrum nulla congue sed. Maecenas vitae felis semper, porttitor risus quis, ornare nulla. Aenean accumsan, odio in sollicitudin commodo, diam libero scelerisque ipsum, ac aliquam nunc nunc vel velit. Nunc eget felis scelerisque, auctor est eget, dignissim dolor. Pellentesque ex leo, pellentesque ut scelerisque id, commodo in urna. Curabitur porttitor elit nec ante placerat, vel imperdiet lorem porta. Vivamus mattis sit amet risus in dictum. Donec vitae est dui. Proin felis ligula, suscipit eu ligula a, mollis sollicitudin massa. Vivamus suscipit nibh felis. Nulla interdum urna erat, nec tincidunt lectus iaculis nec. Cras mattis scelerisque diam, sit amet convallis lacus fringilla eu. Mauris commodo purus id ipsum rutrum bibendum. Morbi condimentum sem in massa dignissim accumsan. Praesent vel justo felis. Proin pretium consequat lacus ac semper. Aenean euismod porttitor erat, ac rutrum sem volutpat eget. Pellentesque sit amet cursus ante. Nulla consectetur nunc a leo lobortis ultrices. Nunc aliquet congue facilisis. Maecenas et tempor velit. Aliquam euismod ut ante quis vulputate. Maecenas vitae pharetra nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in urna quis nisi pulvinar venenatis. Proin aliquet auctor tellus, id finibus sem vehicula luctus. Donec tincidunt nulla at nulla interdum vestibulum. Proin at elit lacus. Curabitur posuere tristique faucibus. Maecenas sollicitudin finibus vehicula.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Video tutorial
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/55d8cAK9oE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
