@@ -2,7 +2,54 @@
   <mat-toolbar-row>
     <span>
       <img src="assets\carpeta.png" height="25" width="25">
-      The Archives</span>
+    </span>
+    <span> &nbsp; The Archives</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>view_headline</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="MO">Métodos de ordenamiento</button>
+      <button mat-menu-item [matMenuTriggerFor]="ED">Estructuras de datos</button>
+    </mat-menu>
+    <mat-menu #MO="matMenu">
+      <button mat-menu-item>Burbuja</button>
+      <button mat-menu-item>Seleccion</button>
+      <button mat-menu-item>Inserción</button>
+      <button mat-menu-item>Bucket</button>
+      <button mat-menu-item>Cuentas</button>
+      <button mat-menu-item>Merge</button>
+      <button mat-menu-item>Radix</button>
+      <button mat-menu-item>Shell</button>
+      <button mat-menu-item>Quicksort</button>
+    </mat-menu>
+    
+    <mat-menu #ED="matMenu">
+      <button mat-menu-item>Arreglos</button>
+      <button mat-menu-item>Cadenas</button>
+      <button mat-menu-item>Matrices</button>
+      <button mat-menu-item>Pilas</button>
+      <button mat-menu-item>Colas</button>
+      <button mat-menu-item>LSE</button>
+      <button mat-menu-item>LDE</button>
+      <button mat-menu-item>Grafos</button>
+    </mat-menu>
+
+
+   <!-- <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>trending_up</mat-icon>
+        <span>Métodos de ordenamiento</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>memory</mat-icon>
+        <span>Estructuras de datos</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>-->
   </mat-toolbar-row>
 </mat-toolbar>
-<app-Grafos></app-Grafos>
+<!--<app-Grafos></app-Grafos>-->
