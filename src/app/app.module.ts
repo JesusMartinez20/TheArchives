@@ -58,6 +58,13 @@ import { ShellComponent } from './shell/shell.component';
 import { QuicksortComponent } from './quicksort/quicksort.component';
 import { PilasComponent } from './pilas/pilas.component';
 import { ColasComponent } from './colas/colas.component';
+import { RadixComponent } from './radix/radix.component';
+import { BurbujaComponent } from './burbuja/burbuja.component';
+import { SeleccionComponent } from './seleccion/seleccion.component';
+import { InsercionComponent } from './insercion/insercion.component';
+import { BucketComponent } from './bucket/bucket.component';
+import { CuentasComponent } from './cuentas/cuentas.component';
+import { MergeComponent } from './merge/merge.component';
 
 //Rutas
 const appRoutes: Routes = [
@@ -75,7 +82,14 @@ const appRoutes: Routes = [
     ShellComponent,
     QuicksortComponent,
     PilasComponent,
-    ColasComponent
+    ColasComponent,
+    RadixComponent,
+    BurbujaComponent,
+    SeleccionComponent,
+    InsercionComponent,
+    BucketComponent,
+    CuentasComponent,
+    MergeComponent
   ],
   imports: [
     BrowserModule,
