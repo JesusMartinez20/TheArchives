@@ -72,7 +72,14 @@ const appRoutes: Routes = [
   {path: "shell", component: ShellComponent},
   {path: "quicksort", component: QuicksortComponent},
   {path: "pilas", component: PilasComponent},
-  {path: "colas", component: ColasComponent}
+  {path: "colas", component: ColasComponent},
+  {path: "radix", component: RadixComponent},
+  {path: "burbuja", component: BurbujaComponent},
+  {path: "seleccion", component: SeleccionComponent},
+  {path: "insercion", component: InsercionComponent},
+  {path: "bucket", component: BucketComponent},
+  {path: "cuentas", component: CuentasComponent},
+  {path: "merge", component: MergeComponent},
 ];
 
 @NgModule({
