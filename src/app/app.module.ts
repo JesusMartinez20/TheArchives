@@ -65,6 +65,9 @@ import { InsercionComponent } from './insercion/insercion.component';
 import { BucketComponent } from './bucket/bucket.component';
 import { CuentasComponent } from './cuentas/cuentas.component';
 import { MergeComponent } from './merge/merge.component';
+import { ArreglosComponent } from './arreglos/arreglos.component';
+import { CadenasComponent } from './cadenas/cadenas.component';
+import { MatricesComponent } from './matrices/matrices.component';
 
 //Rutas
 const appRoutes: Routes = [
@@ -80,6 +83,9 @@ const appRoutes: Routes = [
   {path: "bucket", component: BucketComponent},
   {path: "cuentas", component: CuentasComponent},
   {path: "merge", component: MergeComponent},
+  {path: "arreglos", component: ArreglosComponent},
+  {path: "cadenas", component: CadenasComponent},
+  {path: "matriz", component: MatricesComponent},
 ];
 
 @NgModule({
@@ -96,7 +102,10 @@ const appRoutes: Routes = [
     InsercionComponent,
     BucketComponent,
     CuentasComponent,
-    MergeComponent
+    MergeComponent,
+    ArreglosComponent,
+    CadenasComponent,
+    MatricesComponent
   ],
   imports: [
     BrowserModule,
