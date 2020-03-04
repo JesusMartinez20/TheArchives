@@ -28,7 +28,7 @@ export class MetodosComponent implements OnInit {
     },
     {
       name:'Inserción',
-      route:'inserción'
+      route:'insercion'
     },
     {
       name:'Bucket',
