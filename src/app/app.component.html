@@ -28,11 +28,11 @@
             <button mat-menu-item routerLink="colas">Colas</button>
             <button mat-menu-item>LSE</button>
             <button mat-menu-item>LDE</button>
-            <button mat-menu-item>Grafos</button>
+            <button mat-menu-item routerLink="Grafos">Grafos</button>
           </mat-menu>
     </div>
 
-    <div class="titulo, header">
+    <div class="titulo, header" routerLink="">
         <span>
             <img src="assets\carpeta.png" height="25" width="25">
           </span>
@@ -54,12 +54,26 @@
            Es un sitio que tiene como propósito brindar material de apoyo a aquellos alumnos principiantes de programación o toda aquella persona interesada en dichos temas.
         </p>
     </div>
+    <div class="divFooter" style="display: flex; justify-content: center;">
+      <img src="assets\carpeta.png" alt="" height="25" width="25" style="margin-right: 5px;">
+      <p>
+          Version actual 1.0.0
+      </p>
+  </div>
     <div class="divFooter" style="text-align: right;">
         <h2 style="text-align: right;">
             Desarrolladores
         </h2>
-        <a href="https://github.com/Chit0mx" target="_blank">Andrés Mercado</a><br>
-        <a href="https://github.com/TheRaven0" target="_blank">Kevin Medina</a><br>
-        <a href="https://github.com/JesusMartinez20" target="_blank">Jesús Martínez</a>
+        <div style="display: flex; justify-content: flex-end;">
+          <div>
+            <img src="assets\GitHub-Mark-Light-64px.png" alt="">
+          </div>
+          <div style="text-align: right;">
+            <a href="https://github.com/Chit0mx" target="_blank">Andrés Mercado</a><br>
+            <a href="https://github.com/TheRaven0" target="_blank">Kevin Medina</a><br>
+            <a href="https://github.com/JesusMartinez20" target="_blank">Jesús Martínez</a>
+          </div>
+        </div>
+        
     </div>
 </footer>
