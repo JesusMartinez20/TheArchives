@@ -68,6 +68,9 @@ import { MergeComponent } from './merge/merge.component';
 import { ArreglosComponent } from './arreglos/arreglos.component';
 import { CadenasComponent } from './cadenas/cadenas.component';
 import { MatricesComponent } from './matrices/matrices.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { MetodosComponent } from './metodos/metodos.component';
+import { EstructurasComponent } from './estructuras/estructuras.component';
 
 //Rutas
 const appRoutes: Routes = [
@@ -86,6 +89,9 @@ const appRoutes: Routes = [
   {path: "arreglos", component: ArreglosComponent},
   {path: "cadenas", component: CadenasComponent},
   {path: "matriz", component: MatricesComponent},
+  {path: "metodos", component: MetodosComponent},
+  {path: "estructuras", component: EstructurasComponent},
+  {path: "", component: HomepageComponent},
 ];
 
 @NgModule({
@@ -105,7 +111,10 @@ const appRoutes: Routes = [
     MergeComponent,
     ArreglosComponent,
     CadenasComponent,
-    MatricesComponent
+    MatricesComponent,
+    HomepageComponent,
+    MetodosComponent,
+    EstructurasComponent
   ],
   imports: [
     BrowserModule,
