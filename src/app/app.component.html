@@ -1,55 +1,81 @@
 <mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>
-      <img src="assets\carpeta.png" height="25" width="25">
-    </span>
-    <span> &nbsp; The Archives</span>
-    <span class="spacer"></span>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>view_headline</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item [matMenuTriggerFor]="MO">Métodos de ordenamiento</button>
-      <button mat-menu-item [matMenuTriggerFor]="ED">Estructuras de datos</button>
-    </mat-menu>
-    <mat-menu #MO="matMenu">
-      <button mat-menu-item>Burbuja</button>
-      <button mat-menu-item>Seleccion</button>
-      <button mat-menu-item>Inserción</button>
-      <button mat-menu-item>Bucket</button>
-      <button mat-menu-item>Cuentas</button>
-      <button mat-menu-item>Merge</button>
-      <button mat-menu-item>Radix</button>
-      <button mat-menu-item>Shell</button>
-      <button mat-menu-item>Quicksort</button>
-    </mat-menu>
-    
-    <mat-menu #ED="matMenu">
-      <button mat-menu-item>Arreglos</button>
-      <button mat-menu-item>Cadenas</button>
-      <button mat-menu-item>Matrices</button>
-      <button mat-menu-item>Pilas</button>
-      <button mat-menu-item>Colas</button>
-      <button mat-menu-item>LSE</button>
-      <button mat-menu-item>LDE</button>
-      <button mat-menu-item>Grafos</button>
-    </mat-menu>
+  <mat-toolbar-row class="divs">
+    <div class="header">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>view_headline</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="MO">Métodos de ordenamiento</button>
+            <button mat-menu-item [matMenuTriggerFor]="ED">Estructuras de datos</button>
+          </mat-menu>
+          <mat-menu #MO="matMenu">
+            <button mat-menu-item routerLink="burbuja">Burbuja</button>
+            <button mat-menu-item routerLink="seleccion">Seleccion</button>
+            <button mat-menu-item routerLink="insercion">Inserción</button>
+            <button mat-menu-item routerLink="bucket">Bucket</button>
+            <button mat-menu-item routerLink="cuentas">Cuentas</button>
+            <button mat-menu-item routerLink="merge">Merge</button>
+            <button mat-menu-item routerLink="radix">Radix</button>
+            <button mat-menu-item routerLink="shell">Shell</button>
+            <button mat-menu-item routerLink="quicksort">Quicksort</button>
+          </mat-menu>
+          
+          <mat-menu #ED="matMenu">
+            <button mat-menu-item routerLink="Apuntadores">Apuntadores</button>
+            <button mat-menu-item routerLink="Iteradores">Iteradores</button>
+            <button mat-menu-item routerLink="arreglos">Arreglos</button>
+            <button mat-menu-item routerLink="cadenas">Cadenas</button>
+            <button mat-menu-item routerLink="matriz">Matrices</button>
+            <button mat-menu-item routerLink="pilas">Pilas</button>
+            <button mat-menu-item routerLink="colas">Colas</button>
+            <button mat-menu-item routerLink="LSE">LSE</button>
+            <button mat-menu-item routerLink="LDE">LDE</button>
+            <button mat-menu-item routerLink="Grafos">Grafos</button>
+          </mat-menu>
+    </div>
 
-
-   <!-- <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>trending_up</mat-icon>
-        <span>Métodos de ordenamiento</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>memory</mat-icon>
-        <span>Estructuras de datos</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
-      </button>
-    </mat-menu>-->
+    <div class="titulo, header" routerLink="">
+        <span>
+            <img src="assets\carpeta.png" height="25" width="25">
+          </span>
+          <span> &nbsp; The Archives</span>
+    </div>
+    <div class="header"></div>
   </mat-toolbar-row>
 </mat-toolbar>
-<!--<app-Grafos></app-Grafos>-->
+<router-outlet></router-outlet>
+<div style="height: 15%;"></div>
+
+
+<footer style=background-color:#3f51b5>
+    <div class="divFooter">
+        <h2>
+            The Archives 
+        </h2>
+        <p>
+           Es un sitio que tiene como propósito brindar material de apoyo a aquellos alumnos principiantes de programación o toda aquella persona interesada en dichos temas.
+        </p>
+    </div>
+    <div class="divFooter" style="display: flex; justify-content: center;">
+      <img src="assets\carpeta.png" alt="" height="25" width="25" style="margin-right: 5px;">
+      <p>
+          Version actual 1.0.0
+      </p>
+  </div>
+    <div class="divFooter" style="text-align: right;">
+        <h2 style="text-align: right;">
+            Desarrolladores
+        </h2>
+        <div style="display: flex; justify-content: flex-end;">
+          <div>
+            <img src="assets\GitHub-Mark-Light-64px.png" alt="">
+          </div>
+          <div style="text-align: right;">
+            <a href="https://github.com/Chit0mx" target="_blank">Andrés Mercado</a><br>
+            <a href="https://github.com/TheRaven0" target="_blank">Kevin Medina</a><br>
+            <a href="https://github.com/JesusMartinez20" target="_blank">Jesús Martínez</a>
+          </div>
+        </div>
+        
+    </div>
+</footer>

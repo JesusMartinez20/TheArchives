@@ -1,0 +1,51 @@
+<mat-toolbar class="center">
+    <h1>Shell</h1>
+  </mat-toolbar>
+  
+  <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Definición
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+            El método se denomina así en honor de su inventor Donald Shell. Su implementación original, requiere O(n2) comparaciones e intercambios en el peor caso, aunque un cambio menor presentado en el libro de V. Pratt produce una implementación con un rendimiento de O(n log2 n) en el peor caso. Esto es mejor que las O(n2) comparaciones requeridas por algoritmos simples pero peor que el óptimo O(n log n).            
+        </p>
+        <p>
+            El Shell sort es una generalización del ordenamiento por inserción, teniendo en cuenta dos observaciones: El ordenamiento por inserción es eficiente si la entrada está "casi ordenada". El ordenamiento por inserción es ineficiente, en general, porque mueve los valores sólo una posición cada vez.
+        </p>
+        <p>
+            El algoritmo Shell sort mejora el ordenamiento por inserción comparando elementos separados por un espacio de varias posiciones. Esto permite que un elemento haga "pasos más grandes" hacia su posición esperada. Los pasos múltiples sobre los datos se hacen con tamaños de espacio cada vez más pequeños. El último paso del Shell sort es un simple ordenamiento por inserción, pero para entonces, ya está garantizado que los datos del vector están casi ordenados.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Representación grafica
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="center">
+          <img src="assets/shell.jpg" alt="Representación grafica">
+        </div> 
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Ejemplo de código
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis orci nec tellus pellentesque hendrerit. In auctor accumsan tellus mollis dapibus. Sed convallis efficitur ligula at mattis. Suspendisse faucibus pellentesque vehicula. Sed pharetra viverra dolor a mattis. Nulla vestibulum dapibus efficitur. Duis vehicula ornare nunc, in interdum felis mollis ut. Curabitur tristique ac nisi sit amet laoreet. Aliquam tristique lectus sapien, at rutrum nulla congue sed. Maecenas vitae felis semper, porttitor risus quis, ornare nulla. Aenean accumsan, odio in sollicitudin commodo, diam libero scelerisque ipsum, ac aliquam nunc nunc vel velit. Nunc eget felis scelerisque, auctor est eget, dignissim dolor. Pellentesque ex leo, pellentesque ut scelerisque id, commodo in urna. Curabitur porttitor elit nec ante placerat, vel imperdiet lorem porta. Vivamus mattis sit amet risus in dictum. Donec vitae est dui. Proin felis ligula, suscipit eu ligula a, mollis sollicitudin massa. Vivamus suscipit nibh felis. Nulla interdum urna erat, nec tincidunt lectus iaculis nec. Cras mattis scelerisque diam, sit amet convallis lacus fringilla eu. Mauris commodo purus id ipsum rutrum bibendum. Morbi condimentum sem in massa dignissim accumsan. Praesent vel justo felis. Proin pretium consequat lacus ac semper. Aenean euismod porttitor erat, ac rutrum sem volutpat eget. Pellentesque sit amet cursus ante. Nulla consectetur nunc a leo lobortis ultrices. Nunc aliquet congue facilisis. Maecenas et tempor velit. Aliquam euismod ut ante quis vulputate. Maecenas vitae pharetra nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in urna quis nisi pulvinar venenatis. Proin aliquet auctor tellus, id finibus sem vehicula luctus. Donec tincidunt nulla at nulla interdum vestibulum. Proin at elit lacus. Curabitur posuere tristique faucibus. Maecenas sollicitudin finibus vehicula.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Video tutorial
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ixd134Lyt78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+      </mat-expansion-panel>
+    </mat-accordion>

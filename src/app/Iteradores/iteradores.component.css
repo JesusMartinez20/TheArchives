@@ -1,5 +1,5 @@
 h1 { font-size: 150% }
-p { 
+p{ 
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -8,6 +8,9 @@ p {
     justify-content: center;
 }
 
+h4{
+    margin-left: 5%;
+}
 
 @media only screen and (max-width: 600px) {
     img{

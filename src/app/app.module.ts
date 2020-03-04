@@ -54,6 +54,10 @@ import {MatTreeModule} from '@angular/material/tree';
 
 //Componentes
 import { GrafosComponent } from "./Grafos/Grafos.component";
+import { ShellComponent } from './shell/shell.component';
+import { QuicksortComponent } from './quicksort/quicksort.component';
+import { PilasComponent } from './pilas/pilas.component';
+import { ColasComponent } from './colas/colas.component';
 import { RadixComponent } from './radix/radix.component';
 import { BurbujaComponent } from './burbuja/burbuja.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
@@ -61,25 +65,69 @@ import { InsercionComponent } from './insercion/insercion.component';
 import { BucketComponent } from './bucket/bucket.component';
 import { CuentasComponent } from './cuentas/cuentas.component';
 import { MergeComponent } from './merge/merge.component';
+import { ArreglosComponent } from './arreglos/arreglos.component';
+import { CadenasComponent } from './cadenas/cadenas.component';
+import { MatricesComponent } from './matrices/matrices.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { MetodosComponent } from './metodos/metodos.component';
+import { EstructurasComponent } from './estructuras/estructuras.component';
+import { LSEComponent } from "./LSE/lse.component";
+import { LDEComponent } from "./LDE/lde.component";
+import { ApuntadoresComponent } from "./Apuntadores/apuntadores.component";
+import { IteradoresComponent } from "./Iteradores/iteradores.component";
+
 
 //Rutas
 const appRoutes: Routes = [
-  {
-    path: "",
-    component: GrafosComponent
-  }];
+  {path: "Grafos", component: GrafosComponent},
+  {path: "shell", component: ShellComponent},
+  {path: "quicksort", component: QuicksortComponent},
+  {path: "pilas", component: PilasComponent},
+  {path: "colas", component: ColasComponent},
+  {path: "radix", component: RadixComponent},
+  {path: "burbuja", component: BurbujaComponent},
+  {path: "seleccion", component: SeleccionComponent},
+  {path: "insercion", component: InsercionComponent},
+  {path: "bucket", component: BucketComponent},
+  {path: "cuentas", component: CuentasComponent},
+  {path: "merge", component: MergeComponent},
+  {path: "arreglos", component: ArreglosComponent},
+  {path: "cadenas", component: CadenasComponent},
+  {path: "matriz", component: MatricesComponent},
+  {path: "metodos", component: MetodosComponent},
+  {path: "estructuras", component: EstructurasComponent},
+  {path: "", component: HomepageComponent},
+  {path: "LSE", component: LSEComponent},
+  {path: "LDE", component: LDEComponent},
+  {path: "Apuntadores", component: ApuntadoresComponent},
+  {path: "Iteradores", component: IteradoresComponent},
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     GrafosComponent,
+    ShellComponent,
+    QuicksortComponent,
+    PilasComponent,
+    ColasComponent,
     RadixComponent,
     BurbujaComponent,
     SeleccionComponent,
     InsercionComponent,
     BucketComponent,
     CuentasComponent,
-    MergeComponent
+    MergeComponent,
+    ArreglosComponent,
+    CadenasComponent,
+    MatricesComponent,
+    HomepageComponent,
+    MetodosComponent,
+    EstructurasComponent,
+    LSEComponent,
+    LDEComponent,
+    ApuntadoresComponent,
+    IteradoresComponent,
   ],
   imports: [
     BrowserModule,
