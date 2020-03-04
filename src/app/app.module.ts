@@ -77,6 +77,7 @@ import { ApuntadoresComponent } from "./Apuntadores/apuntadores.component";
 import { IteradoresComponent } from "./Iteradores/iteradores.component";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 
 
 //Rutas
@@ -130,8 +131,10 @@ const appRoutes: Routes = [
     LDEComponent,
     ApuntadoresComponent,
     IteradoresComponent,
+    AcercaDeComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -180,6 +183,9 @@ const appRoutes: Routes = [
     ScrollingModule,
     RouterModule.forRoot(appRoutes),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+  ],
+  entryComponents:[
+    AcercaDeComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
