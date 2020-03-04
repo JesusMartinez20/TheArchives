@@ -71,6 +71,11 @@ import { MatricesComponent } from './matrices/matrices.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MetodosComponent } from './metodos/metodos.component';
 import { EstructurasComponent } from './estructuras/estructuras.component';
+import { LSEComponent } from "./LSE/lse.component";
+import { LDEComponent } from "./LDE/lde.component";
+import { ApuntadoresComponent } from "./Apuntadores/apuntadores.component";
+import { IteradoresComponent } from "./Iteradores/iteradores.component";
+
 
 //Rutas
 const appRoutes: Routes = [
@@ -92,6 +97,10 @@ const appRoutes: Routes = [
   {path: "metodos", component: MetodosComponent},
   {path: "estructuras", component: EstructurasComponent},
   {path: "", component: HomepageComponent},
+  {path: "LSE", component: LSEComponent},
+  {path: "LDE", component: LDEComponent},
+  {path: "Apuntadores", component: ApuntadoresComponent},
+  {path: "Iteradores", component: IteradoresComponent},
 ];
 
 @NgModule({
@@ -114,7 +123,11 @@ const appRoutes: Routes = [
     MatricesComponent,
     HomepageComponent,
     MetodosComponent,
-    EstructurasComponent
+    EstructurasComponent,
+    LSEComponent,
+    LDEComponent,
+    ApuntadoresComponent,
+    IteradoresComponent,
   ],
   imports: [
     BrowserModule,
