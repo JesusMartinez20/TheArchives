@@ -75,6 +75,8 @@ import { LSEComponent } from "./LSE/lse.component";
 import { LDEComponent } from "./LDE/lde.component";
 import { ApuntadoresComponent } from "./Apuntadores/apuntadores.component";
 import { IteradoresComponent } from "./Iteradores/iteradores.component";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 //Rutas
@@ -176,7 +178,8 @@ const appRoutes: Routes = [
     MatTreeModule,
     PortalModule,
     ScrollingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
