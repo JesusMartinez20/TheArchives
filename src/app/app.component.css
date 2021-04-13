@@ -17,17 +17,101 @@
 
 .divFooter{
   width: 50%;
-  padding: 2%;
+  margin: 1% 3%;
 }
 
 footer{
   display: flex;
-  padding: 3%;
-
+  box-shadow: rgb(13 14 14) 1px 1px 5px;
+  min-height:20vh;
 }
 
 p,a,h2{
   text-align: justify;
   color: white;
+}
+
+.router{
+  min-height: 75vh;
+}
+
+.logo_git{
+  height: 15px;
+  width: 15px;
+  margin: 1px 5px;
+}
+
+
+.header_mat{
+  height: 5vh;
+  box-shadow: rgb(13 14 14) 1px 1px 5px;
+}
+
+.developers{
+  /* display: flex;  */
+  justify-content: flex-end;
+  margin-bottom: 5%;
+}
+
+.developersH2{
+  text-align: right;
+}
+
+.version{
+  display: flex; 
+  justify-content: center;
+}
+
+.dev{
+  display: flex; 
+  align-items: center;
+  padding: 1%;
+  min-width: 135px;
+}
+
+.devContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    
+  footer{
+    flex-wrap: wrap;
+  }
+
+  .developers{
+    /* display: flex;  */
+  }
+
+  .developersH2{
+    text-align: left;
+  }
+
+  .version{
+    justify-content: unset;
+  }
+
+  .logo_git{
+    height: 15px;
+    width: 15px;
+    margin: 1px 5px;
+  }
+  
+  .divFooter{
+    width: 50%;
+    padding: 3% 0 0 3%;
+  }
+
+  .dev{
+    display: flex; 
+    align-items: center;
+    padding: 1%;
+  }
+
+  .devContainer{
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 

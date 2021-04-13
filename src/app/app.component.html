@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="header_mat" color="primary">
   <mat-toolbar-row class="divs">
     <div class="header">
         <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -34,7 +34,7 @@
           </mat-menu>
     </div>
 
-    <div class="header" style="display: flex;justify-content: center;" routerLink="">
+    <div class="header" style="display: flex;justify-content: center; align-items: center; cursor: pointer;" routerLink="">
         <span>
             <img src="assets\carpeta.png" height="25" width="25">
           </span>
@@ -43,8 +43,9 @@
     <div class="header"></div>
   </mat-toolbar-row>
 </mat-toolbar>
-<router-outlet></router-outlet>
-<div style="height: 15%;"></div>
+<div class="router">
+  <router-outlet></router-outlet>
+</div>
 
 
 <footer style=background-color:#3f51b5>
@@ -52,26 +53,36 @@
         <h2>
             The Archives 
         </h2>
-        <button mat-raised-button color="primary" (click)="openDialog()">Acerca de</button>
+        <button mat-raised-button color="primary" style="background-color: #2E3A82;margin-bottom: 3%;" (click)="openDialog()">Acerca de</button>
     </div>
-    <div class="divFooter" style="display: flex; justify-content: center;">
+    <div class="divFooter version">
       <img src="assets\carpeta.png" alt="" height="25" width="25" style="margin-right: 5px;">
-      <p>
-          Version actual 1.0.0
+      <p style="line-height: 25px;margin: 0px;">
+          Version actual 1.0.1
       </p>
-  </div>
-    <div class="divFooter" style="text-align: right;">
-        <h2 style="text-align: right;">
+    </div>
+    <div class="divFooter">
+        <h2 class="developersH2">
             Desarrolladores
         </h2>
-        <div style="display: flex; justify-content: flex-end;">
-          <div>
-            <img src="assets\GitHub-Mark-Light-64px.png" alt="">
+        <div class="developers">
+          <div class="devContainer">
+            <div class="dev">
+              <img src="assets\GitHub-Mark-Light-64px.png" alt="" class="logo_git">
+              <a href="https://github.com/Chit0mx" target="_blank">Andrés Mercado</a><br>
+            </div>
           </div>
-          <div style="text-align: right;">
-            <a href="https://github.com/Chit0mx" target="_blank">Andrés Mercado</a><br>
-            <a href="https://github.com/TheRaven0" target="_blank">Kevin Medina</a><br>
-            <a href="https://github.com/JesusMartinez20" target="_blank">Jesús Martínez</a>
+          <div class="devContainer">
+            <div  class="dev">
+              <img src="assets\GitHub-Mark-Light-64px.png" alt="" class="logo_git">
+              <a href="https://github.com/TheRaven0" target="_blank">Kevin Medina</a><br>
+            </div>
+          </div>
+          <div class="devContainer">
+            <div class="dev">
+              <img src="assets\GitHub-Mark-Light-64px.png" alt="" class="logo_git">
+              <a href="https://github.com/JesusMartinez20" target="_blank">Jesús Martínez</a>
+            </div>
           </div>
         </div>
         
