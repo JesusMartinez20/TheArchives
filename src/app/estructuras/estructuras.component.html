@@ -1,7 +1,7 @@
 <mat-list>
     <h3 mat-subheader>Estructuras</h3>
     <mat-list-item *ngFor="let estructura of estructuras" routerLink="/{{estructura.route}}">
-      <mat-icon mat-list-icon>folder</mat-icon>
+      <mat-icon mat-list-icon style="color: #2E3A82;">folder</mat-icon>
       <h4 mat-line>{{estructura.name}}</h4>
     </mat-list-item>
     <mat-divider></mat-divider>
